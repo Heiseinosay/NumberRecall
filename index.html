@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="option" id="option">
+        <h1 class="libre-barcode-39-extended-text-regular ">Number Recall</h1>
+        
+        <img src="imgs/play.png" alt="play button" id="play" class="play-btn">
+
+        <div class="slider">
+            <div class="info">
+                <p>boxes: <span id="total">9</span> </p> <p>items: <span id="total-items">5</span></p>
+            </div>
+            
+            <input type="range" value="9" min="9" max="15" step="3" class="range" id="range">
+        </div>
+        <div class="buttons">
+            <button id="easy" class="difficulty difficultyActive" onclick="setTime(this, 1)">1</button>
+            <button id="medium" class="difficulty" onclick="setTime(this, 2)">0.5</button>
+            <button id="hard" class="difficulty" onclick="setTime(this, 3)">0.3</button>
+        </div>
+        
+    </div>
+    <div id="timer"><h1 id="timer-counter"></h1></div>
+    <div class="container" id="container">
+
+    </div>
+</body>
+<script src="main.js"></script>
+</html>
