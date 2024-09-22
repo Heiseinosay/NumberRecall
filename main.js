@@ -99,7 +99,7 @@ play.addEventListener('click', () => {
     option.style.display = "none";
 
     // Countdown starting value
-    let countdown = 1;
+    let countdown = 3;
 
     // Update the timer h1 element with the current countdown value
     timer.style.display = "flex"
